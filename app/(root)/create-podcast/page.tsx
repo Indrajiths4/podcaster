@@ -133,7 +133,15 @@ const createPodcast = () => {
         </div>
 
         <div className="flex flex-col pt-10">
-          <GeneratePodcast />
+          <GeneratePodcast 
+            setAudioStorageId={setAudioStorageId}
+            setAudio={setAudioUrl}
+            voiceType={voiceType}
+            audio={audioUrl}
+            voicePrompt={voicePrompt}
+            setVoicePrompt={setVoicePrompt}
+            setAudioDuration={setAudioDuration}
+          />
           <GenerateThumbnail />
 
           <div className="mt-10 w-full">
